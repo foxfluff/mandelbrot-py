@@ -30,8 +30,11 @@ for y in range(height):
         if in_set:
             row += chars[0]
         else:
-            i = int(upper_bound
-                    * math.log(iter, upper_bound)
-                    / log_scale)
+            if iter == 0:
+                i = 0
+            else:
+                i = int(upper_bound
+                        * math.log(iter, upper_bound)
+                        / log_scale)
             row += chars[i+1]
     print row
