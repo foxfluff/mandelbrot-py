@@ -10,7 +10,7 @@ class mandelbrot(object):
         # I sense that my future is full of grey hair and edge cases
         for iteration in xrange(iterinit, self.iterations):
             z = z**2 + coordinate
-            if z.real > 2: break
+            if abs(z.real) > 2: break
 
         self.cache_point(coordinate, iteration, z) #inb4 edge cases
         if iteration == self.iterations - 1 and z.real < 2:
