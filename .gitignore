@@ -252,3 +252,5 @@ paket-files/
 *.sln.iml
 /mandelbrot-py.sln
 /mandelbrot-py.pyproj
+/mandelbrot.sln
+/mandelbrot.pyproj
